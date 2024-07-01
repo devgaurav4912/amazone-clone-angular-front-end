@@ -14,6 +14,10 @@ import { BannerComponent } from './banner/banner.component';
 import {MatCardModule} from '@angular/material/card';
 import { ProductComponent } from './product/product.component'
 import { HttpClientModule } from '@angular/common/http';
+import { CheckoutProductComponent } from './checkout-product/checkout-product.component';
+import { CheckoutSubtotalComponent } from './checkout-subtotal/checkout-subtotal.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -25,14 +29,19 @@ import { HttpClientModule } from '@angular/common/http';
     CheckoutComponent,
     LoginComponent,
     BannerComponent,
-    ProductComponent
+    ProductComponent,
+    CheckoutProductComponent,
+    CheckoutSubtotalComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()

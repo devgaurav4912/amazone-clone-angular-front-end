@@ -5,8 +5,9 @@
 }
 
 .product > mat-card > img{
-    object-fit: contain;
+    /* object-fit: contain; */
     height: 200px;
+    width: 90%;
 }
 .product > mat-card{
     display: flex;

@@ -26,4 +26,10 @@ export class ProductComponent  implements OnInit{
     })
   }
 
+  addToCart(id:any){
+    this.service.getProductById(id).subscribe((res:any)=>{
+      console.log(res)
+    })
+  }
+
 }

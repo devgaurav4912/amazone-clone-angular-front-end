@@ -1,1 +1,41 @@
-<p>login works!</p>
+<!-- <p>login works!</p>
+<div class="login">
+    <div class="login-container">
+        <img routerLink="/" class="login_logo"
+        src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo-700x394.png" alt="">
+        <div class="login_form">
+            <h1>Sign-in</h1>
+            <form action="">
+                <h5>Email</h5>
+            <input type="password">
+            <button class="login_signIn_button">Sign In</button>
+            <p class="login_terms">By continuing you agree to Amazone's Condition of use of private notice.</p>
+            <button class="login_create_button">Create amzone account</button>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="login-container">
+    <div class="login-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+    </div>
+    <div class="login-form">
+      <h1>Sign-In</h1>
+      <form>
+        <label for="email" >Email or mobile phone number</label>
+        <input [(ngModel)]="loginData.userId"  type="text" id="email" name="email" required>
+        
+        <label for="password">Password</label>
+        <input [(ngModel)]="loginData.password" type="password" id="password" name="password" required>
+  
+        <button (click)="loginUser()" type="submit">Sign-In</button>
+      </form>
+      <p>By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+    </div>
+    <div class="create-account">
+      <h2>New to Amazon?</h2>
+      <button (click)="registerUser()">Create your Amazon account</button>
+    </div>
+  </div>

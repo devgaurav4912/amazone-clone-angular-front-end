@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { HttpService } from '../http.service';
+import { Login } from '../model/login';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -6,6 +9,8 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent  {
+
+ 
 
 }

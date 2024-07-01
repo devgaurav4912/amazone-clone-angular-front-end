@@ -5,8 +5,8 @@
         <mat-card>
             <p>{{item.productDetails}}</p>
             <p>$<strong>{{item.price}}</strong></p>
-            <img src={{item.productImage}}>
-            <button>Add to cart</button>
+            <img src={{item.image}} alt="Image">
+            <button (click)="addToCart(item.id)">Add to cart</button>
         </mat-card>
     </div>
 
